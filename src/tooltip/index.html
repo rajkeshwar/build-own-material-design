@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design button</title> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <script src="/bower_components/material-design-lite/material.min.js"></script> -->
+  <script src="../componentHandler.js"></script>
+
+  <!-- ripple module -->
+  <!-- <link href="../ripple/ripple.css" rel="stylesheet"> -->
+  <!-- <script src="../ripple/ripple.js"></script> -->
+
+  <!-- tooltip module -->
+  <link href="tooltip.css" rel="stylesheet" >
+  <script src="tooltip.js"></script>
+
+  <style type="text/css">
+  
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3>TOOLTIP PAGE</h3>
+  
+  <div class="spacer"></div>
+  <!-- Simple Tooltip -->
+  <div id="tt1" class="icon material-icons">add</div>
+  <div class="mdl-tooltip" for="tt1">Follow</div>
+  <!-- Large Tooltip -->
+  <div id="tt2" class="icon material-icons">print</div>
+  <div class="mdl-tooltip mdl-tooltip--large" for="tt2">Print</div>
+
+  <div class="spacer"></div>
+  <!-- Rich Tooltip -->
+  <div id="tt3" class="icon material-icons">cloud_upload</div>
+  <div class="mdl-tooltip" for="tt3">Upload<strong>file.zip</strong></div>
+  <!-- Multiline Tooltip -->
+  <div id="tt4" class="icon material-icons">share</div>
+  <div class="mdl-tooltip" for="tt4">Share your content<br>via social media</div>
+</div>
+
+</body>
+</html>

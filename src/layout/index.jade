@@ -1,0 +1,99 @@
+doctype html
+html
+  head
+    title Material design button
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    // <script src="/bower_components/material-design-lite/material.min.js"></script>
+    script(src='../componentHandler.js')
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    // <script src="../ripple/ripple.js"></script>
+    // button module
+    link(href='layout.css', rel='stylesheet')
+    |   
+    script(src='layout.js')
+    |   
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 LAYOUT
+      |   
+      |   
+      .spacer
+      // Uses a transparent header that draws on top of the layout's background
+      style.
+        .demo-layout-transparent {
+        background: url('img/transparent.jpg') center / cover;
+        }
+        .mdl-layout__container {
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+        /* This background is dark, so we set text to white. Use 87% black instead if
+        your background is light. */
+        color: white;
+        }
+      |   
+      .demo-layout-transparent.mdl-layout.mdl-js-layout.demo
+        header.mdl-layout__header.mdl-layout__header--transparent
+          .mdl-layout__header-row
+            // Title
+            span.mdl-layout-title Title
+            // Add spacer, to align navigation to the right
+            .mdl-layout-spacer
+            // Navigation
+            nav.mdl-navigation
+              a.mdl-navigation__link(href='') Link
+              |           
+              a.mdl-navigation__link(href='') Link
+        |     
+        .mdl-layout__drawer
+          span.mdl-layout-title Title
+          |       
+          nav.mdl-navigation
+            a.mdl-navigation__link(href='') Aside link
+            |         
+            a.mdl-navigation__link(href='') Aside link
+        |     
+        main.mdl-layout__content
+      |   
+      .spacer
+      // Always shows a header, even in smaller screens.
+      .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        header.mdl-layout__header
+          .mdl-layout__header-row
+            // Title
+            span.mdl-layout-title Title
+            // Add spacer, to align navigation to the right
+            .mdl-layout-spacer
+            // Navigation. We hide it in small screens.
+            nav.mdl-navigation.mdl-layout--large-screen-only
+              a.mdl-navigation__link(href='') Link
+              |           
+              a.mdl-navigation__link(href='') Link
+        |     
+        .mdl-layout__drawer
+          span.mdl-layout-title Title
+          |       
+          nav.mdl-navigation
+            a.mdl-navigation__link(href='') Link
+            |         
+            a.mdl-navigation__link(href='') Link
+        |     
+        main.mdl-layout__content
+          .page-content
+            // Your content goes here

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design checkbox</title> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="/bower_components/material-design-lite/material.min.js"></script>
+  <!-- <script src="../componentHandler.js"></script> -->
+
+  <!-- ripple module -->
+  <link href="../ripple/ripple.css" rel="stylesheet">
+  <!-- <script src="../ripple/ripple.js"></script> -->
+
+  <!-- checkbox module -->
+  <link href="tabs.css" rel="stylesheet" >
+  <script src="tabs.js"></script>
+
+  <style type="text/css">
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3>TABS</h3>
+  <div class="spacer"></div>
+
+  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar">
+        <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+        <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+        <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+    </div>
+
+    <div class="mdl-tabs__panel is-active" id="starks-panel">
+      <ul>
+        <li>Eddard</li>
+        <li>Catelyn</li>
+        <li>Robb</li>
+        <li>Sansa</li>
+        <li>Brandon</li>
+        <li>Arya</li>
+        <li>Rickon</li>
+      </ul>
+    </div>
+    <div class="mdl-tabs__panel" id="lannisters-panel">
+      <ul>
+        <li>Tywin</li>
+        <li>Cersei</li>
+        <li>Jamie</li>
+        <li>Tyrion</li>
+      </ul>
+    </div>
+    <div class="mdl-tabs__panel" id="targaryens-panel">
+      <ul>
+        <li>Viserys</li>
+        <li>Daenerys</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

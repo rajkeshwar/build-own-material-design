@@ -1,0 +1,77 @@
+doctype html
+html
+  head
+    title Material design textfield
+    | &#x9;
+    | &#x9;
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    // <script src="/bower_components/material-design-lite/material.min.js"></script>
+    script(src='../componentHandler.js')
+    // ripple module
+    // <link href="../ripple/ripple.css" rel="stylesheet">
+    // <script src="../ripple/ripple.js"></script>
+    // textfield module
+    link(href='textfield.css', rel='stylesheet')
+    | &#x9;
+    script(src='textfield.js')
+    | &#x9;
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 TEXT FIELDS
+      // Simple Textfield
+      form(action='#')
+        .mdl-textfield.mdl-js-textfield
+          input#sample1.mdl-textfield__input(type='text')
+          | &#x9;    
+          label.mdl-textfield__label(for='sample1') Text...
+      // Numeric Textfield
+      form(action='#')
+        .mdl-textfield.mdl-js-textfield
+          input#sample2.mdl-textfield__input(type='text', pattern='-?[0-9]*(\.[0-9]+)?')
+          | &#x9;    
+          label.mdl-textfield__label(for='sample2') Number...
+          | &#x9;    
+          span.mdl-textfield__error Input is not a number!
+      | &#x9;
+      .spacer
+      // Textfield with Floating Label
+      form(action='#')
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+          input#sample3.mdl-textfield__input(type='text')
+          | &#x9;    
+          label.mdl-textfield__label(for='sample3') Text...
+      // Numeric Textfield with Floating Label
+      form(action='#')
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+          input#sample4.mdl-textfield__input(type='text', pattern='-?[0-9]*(\.[0-9]+)?')
+          | &#x9;    
+          label.mdl-textfield__label(for='sample4') Number...
+          | &#x9;    
+          span.mdl-textfield__error Input is not a number!
+      | &#x9;
+      .spacer
+      // Floating Multiline Textfield
+      form(action='#')
+        .mdl-textfield.mdl-js-textfield
+          textarea#sample5.mdl-textfield__input(type='text', rows='3')
+          | &#x9;    
+          label.mdl-textfield__label(for='sample5') Text lines...
+      // Expandable Textfield
+      form(action='#')
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable
+          label.mdl-button.mdl-js-button.mdl-button--icon(for='sample6')
+            i.material-icons search
+          | &#x9;    
+          .mdl-textfield__expandable-holder
+            input#sample6.mdl-textfield__input(type='text')
+            | &#x9;      
+            label.mdl-textfield__label(for='sample-expandable') Expandable Input

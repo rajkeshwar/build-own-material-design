@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    title Material design checkbox
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    |   
+    script(src='/bower_components/material-design-lite/material.min.js')
+    // <script src="../componentHandler.js"></script>
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    // <script src="../ripple/ripple.js"></script>
+    // checkbox module
+    link(href='tabs.css', rel='stylesheet')
+    |   
+    script(src='tabs.js')
+    |   
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 TABS
+      |   
+      .spacer
+      |   
+      .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+        .mdl-tabs__tab-bar
+          a.mdl-tabs__tab.is-active(href='#starks-panel') Starks
+          |         
+          a.mdl-tabs__tab(href='#lannisters-panel') Lannisters
+          |         
+          a.mdl-tabs__tab(href='#targaryens-panel') Targaryens
+        |     
+        #starks-panel.mdl-tabs__panel.is-active
+          ul
+            li Eddard
+            |         
+            li Catelyn
+            |         
+            li Robb
+            |         
+            li Sansa
+            |         
+            li Brandon
+            |         
+            li Arya
+            |         
+            li Rickon
+        |     
+        #lannisters-panel.mdl-tabs__panel
+          ul
+            li Tywin
+            |         
+            li Cersei
+            |         
+            li Jamie
+            |         
+            li Tyrion
+        |     
+        #targaryens-panel.mdl-tabs__panel
+          ul
+            li Viserys
+            |         
+            li Daenerys

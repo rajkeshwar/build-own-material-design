@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Material design badge
+    | &#x9;
+    | &#x9;
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    | &#x9;
+    link(rel='stylesheet', href='badge.css')
+    | &#x9;
+    style(type='text/css').
+      .mdl-badge {
+      color: rgba(0, 0, 0, 0.24);
+      }
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 BADGES
+      | &#x9;
+      .spacer
+      // Number badge on icon
+      .material-icons.mdl-badge.mdl-badge--overlap(data-badge='1') account_box
+      | &#x9;
+      .material-icons.mdl-badge.mdl-badge--overlap(data-badge='♥') account_box
+      | &#x9;
+      .spacer
+      // Number badge
+      span.mdl-badge(data-badge='4') Inbox
+      // Icon badge
+      span.mdl-badge(data-badge='♥') Mood

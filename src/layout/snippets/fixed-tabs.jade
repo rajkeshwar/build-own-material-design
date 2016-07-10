@@ -1,0 +1,31 @@
+html
+  body
+    // Simple header with fixed tabs.
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header.mdl-layout--fixed-tabs
+      header.mdl-layout__header
+        .mdl-layout__header-row
+          // Title
+          span.mdl-layout-title Title
+        // Tabs
+        .mdl-layout__tab-bar.mdl-js-ripple-effect
+          a.mdl-layout__tab.is-active(href='#fixed-tab-1') Tab 1
+          |       
+          a.mdl-layout__tab(href='#fixed-tab-2') Tab 2
+          |       
+          a.mdl-layout__tab(href='#fixed-tab-3') Tab 3
+      |   
+      .mdl-layout__drawer
+        span.mdl-layout-title Title
+      |   
+      main.mdl-layout__content
+        section#fixed-tab-1.mdl-layout__tab-panel.is-active
+          .page-content
+            // Your content goes here
+        |     
+        section#fixed-tab-2.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here
+        |     
+        section#fixed-tab-3.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here

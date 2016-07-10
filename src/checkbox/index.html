@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design checkbox</title> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="/bower_components/material-design-lite/material.min.js"></script>
+  <!-- <script src="../componentHandler.js"></script> -->
+
+  <!-- ripple module -->
+  <link href="../ripple/ripple.css" rel="stylesheet">
+  <!-- <script src="../ripple/ripple.js"></script> -->
+
+  <!-- checkbox module -->
+  <link href="checkbox.css" rel="stylesheet" >
+  <script src="checkbox.js"></script>
+
+  <style type="text/css">
+    ul {
+      border-left: solid 3px #C0EbF1;
+      list-style-type: none;
+      padding-left: 20px;
+      line-height: 28px;
+    }
+    ul li a {
+      font-weight: 400;
+      color: #00BCD4;
+      text-decoration: none;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3>FORM ELEMENT</h3>
+  <nav class="+">
+    <ul>      
+      <li><a>Checkbox</a></li>      
+      <li><a>Icon toggle</a></li>      
+      <li><a>Switch</a></li>      
+    </ul>
+  </nav>
+  
+  <div class="spacer"></div>
+  <h4>CHECKBOX</h4>
+  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+    <span class="mdl-checkbox__label">Checkbox</span>
+  </label>
+  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+    <span class="mdl-checkbox__label">Checkbox</span>
+  </label>
+
+  <div class="spacer"></div>
+
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+    <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+    <span class="mdl-radio__label">First</span>
+  </label>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+    <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+    <span class="mdl-radio__label">Second</span>
+  </label>
+
+  <div class="spacer"></div>
+  
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash1">
+    <input checked class="mdl-radio__button" id="flash1" name="flash" type="radio"
+     value="on">
+    <span class="mdl-radio__label">Always on</span>
+  </label>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash2">
+    <input class="mdl-radio__button" id="flash2" name="flash" type="radio" value="off">
+    <span class="mdl-radio__label">Always off</span>
+  </label>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash3">
+    <input class="mdl-radio__button" id="flash3" name="flash" type="radio" value="auto">
+    <span class="mdl-radio__label">Automatic</span>
+  </label>
+</div>
+
+</body>
+</html>

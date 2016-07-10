@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    title Material design button
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    // <script src="/bower_components/material-design-lite/material.min.js"></script>
+    script(src='../componentHandler.js')
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    |   
+    script(src='../ripple/ripple.js')
+    // menu module
+    link(href='menu.css', rel='stylesheet')
+    |   
+    script(src='menu.js')
+    |   
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 MENU PAGE
+      |   
+      |   
+      .spacer
+      // Left aligned menu below button
+      button#demo-menu-lower-left.mdl-button.mdl-js-button.mdl-button--icon
+        i.material-icons more_vert
+      |   
+      ul.mdl-menu.mdl-menu--bottom-left.mdl-js-menu.mdl-js-ripple-effect(for='demo-menu-lower-left')
+        li.mdl-menu__item Some Action
+        |     
+        li.mdl-menu__item.mdl-menu__item--full-bleed-divider Another Action
+        |     
+        li.mdl-menu__item(disabled='') Disabled Action
+        |     
+        li.mdl-menu__item Yet Another Action
+      // Right aligned menu below button
+      button#demo-menu-lower-right.mdl-button.mdl-js-button.mdl-button--icon
+        i.material-icons more_vert
+      |   
+      ul.mdl-menu.mdl-menu--bottom-right.mdl-js-menu.mdl-js-ripple-effect(for='demo-menu-lower-right')
+        li.mdl-menu__item Some Action
+        |     
+        li.mdl-menu__item Another Action
+        |     
+        li.mdl-menu__item(disabled='') Disabled Action
+        |     
+        li.mdl-menu__item Yet Another Action
+      |   
+      .spacer
+      // Left aligned menu on top of button
+      button#demo-menu-top-left.mdl-button.mdl-js-button.mdl-button--icon
+        i.material-icons more_vert
+      |   
+      ul.mdl-menu.mdl-menu--top-left.mdl-js-menu.mdl-js-ripple-effect(data-mdl-for='demo-menu-top-left')
+        li.mdl-menu__item Some Action
+        |     
+        li.mdl-menu__item Another Action
+        |     
+        li.mdl-menu__item(disabled='') Disabled Action
+        |     
+        li.mdl-menu__item Yet Another Action
+      // Right aligned menu on top of button
+      button#demo-menu-top-right.mdl-button.mdl-js-button.mdl-button--icon
+        i.material-icons more_vert
+      |   
+      ul.mdl-menu.mdl-menu--top-right.mdl-js-menu.mdl-js-ripple-effect(data-mdl-for='demo-menu-top-right')
+        li.mdl-menu__item Some Action
+        |     
+        li.mdl-menu__item Another Action
+        |     
+        li.mdl-menu__item(disabled='') Disabled Action
+        |     
+        li.mdl-menu__item Yet Another Action

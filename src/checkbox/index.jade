@@ -1,0 +1,99 @@
+doctype html
+html
+  head
+    title Material design checkbox
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    |   
+    script(src='/bower_components/material-design-lite/material.min.js')
+    // <script src="../componentHandler.js"></script>
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    // <script src="../ripple/ripple.js"></script>
+    // checkbox module
+    link(href='checkbox.css', rel='stylesheet')
+    |   
+    script(src='checkbox.js')
+    |   
+    style(type='text/css').
+      ul {
+      border-left: solid 3px #C0EbF1;
+      list-style-type: none;
+      padding-left: 20px;
+      line-height: 28px;
+      }
+      ul li a {
+      font-weight: 400;
+      color: #00BCD4;
+      text-decoration: none;
+      }
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 FORM ELEMENT
+      |   
+      nav.(class='+')
+        ul
+          li
+            a Checkbox
+          |       
+          |       
+          li
+            a Icon toggle
+          |       
+          |       
+          li
+            a Switch
+      |   
+      |   
+      .spacer
+      |   
+      h4 CHECKBOX
+      |   
+      label.mdl-checkbox.mdl-js-checkbox.mdl-js-ripple-effect(for='checkbox-1')
+        input#checkbox-1.mdl-checkbox__input(type='checkbox', checked='')
+        |     
+        span.mdl-checkbox__label Checkbox
+      |   
+      label.mdl-checkbox.mdl-js-checkbox.mdl-js-ripple-effect(for='checkbox-2')
+        input#checkbox-2.mdl-checkbox__input(type='checkbox')
+        |     
+        span.mdl-checkbox__label Checkbox
+      |   
+      .spacer
+      |   
+      label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='option-1')
+        input#option-1.mdl-radio__button(type='radio', name='options', value='1', checked='')
+        |     
+        span.mdl-radio__label First
+      |   
+      label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='option-2')
+        input#option-2.mdl-radio__button(type='radio', name='options', value='2')
+        |     
+        span.mdl-radio__label Second
+      |   
+      .spacer
+      |   
+      |   
+      label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='flash1')
+        input#flash1.mdl-radio__button(checked='', name='flash', type='radio', value='on')
+        |     
+        span.mdl-radio__label Always on
+      |   
+      label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='flash2')
+        input#flash2.mdl-radio__button(name='flash', type='radio', value='off')
+        |     
+        span.mdl-radio__label Always off
+      |   
+      label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='flash3')
+        input#flash3.mdl-radio__button(name='flash', type='radio', value='auto')
+        |     
+        span.mdl-radio__label Automatic

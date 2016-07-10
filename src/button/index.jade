@@ -1,0 +1,104 @@
+doctype html
+html
+  head
+    title Material design button
+    | &#x9;
+    | &#x9;
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    | &#x9;
+    script(src='/bower_components/material-design-lite/material.min.js')
+    // <script src="../componentHandler.js"></script>
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    // <script src="../ripple/ripple.js"></script>
+    // button module
+    link(href='button.css', rel='stylesheet')
+    // <script src="button.js"></script>
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 BUTTON
+      | &#x9;
+      .spacer
+      // Colored FAB button
+      button.mdl-button.mdl-js-button.mdl-button--fab.mdl-button--colored(cont='Fab Icon')
+        i.material-icons add
+      // Colored FAB button with ripple
+      button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+        i.material-icons add
+      | &#x9;
+      .spacer
+      // FAB button
+      button.mdl-button.mdl-js-button.mdl-button--fab
+        i.material-icons add
+      // FAB button with ripple
+      button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect
+        i.material-icons add
+      // Disabled FAB button
+      button.mdl-button.mdl-js-button.mdl-button--fab(disabled='')
+        i.material-icons add
+      | &#x9;
+      .spacer
+      // Raised button
+      button.mdl-button.mdl-js-button.mdl-button--raised
+        | Button
+      // Raised button with ripple
+      button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect
+        | Button
+      // Raised disabled button
+      button.mdl-button.mdl-js-button.mdl-button--raised(disabled='')
+        | Button
+      | &#x9;
+      .spacer
+      // Colored raised button
+      button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored
+        | Button
+      // Accent-colored raised button
+      button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--accent
+        | Button
+      // Accent-colored raised button with ripple
+      button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
+        | Button
+      | &#x9;
+      .spacer
+      // Flat button
+      button.mdl-button.mdl-js-button
+        | Button
+      // Flat button with ripple
+      button.mdl-button.mdl-js-button.mdl-js-ripple-effect
+        | Button
+      // Disabled flat button
+      button.mdl-button.mdl-js-button(disabled='')
+        | Button
+      | &#x9;
+      .spacer
+      // Primary-colored flat button
+      button.mdl-button.mdl-js-button.mdl-button--primary
+        | Button
+      // Accent-colored flat button
+      button.mdl-button.mdl-js-button.mdl-button--accent
+        | Button
+      | &#x9;
+      .spacer
+      // Icon button
+      button.mdl-button.mdl-js-button.mdl-button--icon
+        i.material-icons mood
+      // Colored icon button
+      button.mdl-button.mdl-js-button.mdl-button--icon.mdl-button--colored
+        i.material-icons mood
+      | &#x9;
+      .spacer
+      // Mini FAB button
+      button.mdl-button.mdl-js-button.mdl-button--fab.mdl-button--mini-fab
+        i.material-icons add
+      // Colored mini FAB button
+      button.mdl-button.mdl-js-button.mdl-button--fab.mdl-button--mini-fab.mdl-button--colored
+        i.material-icons add

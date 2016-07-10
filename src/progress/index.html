@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design button</title> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <script src="/bower_components/material-design-lite/material.min.js"></script> -->
+  <script src="../componentHandler.js"></script>
+  <!-- <script src="../third_party/rAF.js"></script> -->
+
+  <!-- ripple module -->
+  <!-- <link href="../ripple/ripple.css" rel="stylesheet"> -->
+  <!-- <script src="../ripple/ripple.js"></script> -->
+
+  <!-- progress module -->
+  <link href="progress.css" rel="stylesheet" >
+  <script src="progress.js"></script>
+
+  <style type="text/css">
+  
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3>BLANK PAGE</h3>
+  
+  <div class="spacer"></div>
+  <!-- Simple MDL Progress Bar -->
+  <div id="p1" class="mdl-progress mdl-js-progress"></div>
+  <script>
+    document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+      this.MaterialProgress.setProgress(44);
+    });
+  </script>
+
+  <div class="spacer"></div>
+  <!-- MDL Progress Bar with Indeterminate Progress -->
+  <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+  <div class="spacer"></div>
+  <!-- MDL Progress Bar with Buffering -->
+  <div id="p3" class="mdl-progress mdl-js-progress"></div>
+  <script>
+    document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+      this.MaterialProgress.setProgress(33);
+      this.MaterialProgress.setBuffer(87);
+    });
+  </script>
+
+</div>
+
+</body>
+</html>

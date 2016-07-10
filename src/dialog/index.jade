@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title Material design dialog
+    | &#x9;
+    | &#x9;
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    | &#x9;
+    link(rel='stylesheet', href='dialog.css')
+    | &#x9;
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 DIALOG
+      | &#x9;
+      button#show-dialog.mdl-button(type='button') Show Dialog
+      |   
+      dialog.mdl-dialog
+        h4.mdl-dialog__title Allow data collection?
+        |     
+        .mdl-dialog__content
+          p
+            | Allowing us to collect data will let us get you the information you want faster.
+        |     
+        .mdl-dialog__actions
+          button.mdl-button(type='button') Agree
+          |       
+          button.mdl-button.close(type='button') Disagree
+      |   
+      script.
+        var dialog = document.querySelector('dialog');
+        var showDialogButton = document.querySelector('#show-dialog');
+        // if (! dialog.showModal) {
+        //   dialogPolyfill.registerDialog(dialog);
+        // }
+        showDialogButton.addEventListener('click', function() {
+        dialog.showModal();
+        });
+        dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+        });

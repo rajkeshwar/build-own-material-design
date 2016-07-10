@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    title Material design button
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    // <script src="/bower_components/material-design-lite/material.min.js"></script>
+    script(src='../componentHandler.js')
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    |   
+    script(src='../ripple/ripple.js')
+    // checkbox module
+    link(href='../checkbox/checkbox.css', rel='stylesheet')
+    |   
+    script(src='../checkbox/checkbox.js')
+    // data-table module
+    link(href='data-table.css', rel='stylesheet')
+    |   
+    script(src='data-table.js')
+    |   
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 DATA TABLE
+      |   
+      |   
+      .spacer
+      |   
+      table.mdl-data-table.mdl-js-data-table.mdl-data-table--selectable.mdl-shadow--2dp
+        thead
+          tr
+            th.mdl-data-table__cell--non-numeric Material
+            |         
+            th Quantity
+            |         
+            th Unit price
+        |     
+        tbody
+          tr
+            td.mdl-data-table__cell--non-numeric Acrylic (Transparent)
+            |         
+            td 25
+            |         
+            td $2.90
+          |       
+          tr
+            td.mdl-data-table__cell--non-numeric Plywood (Birch)
+            |         
+            td 50
+            |         
+            td $1.25
+          |       
+          tr
+            td.mdl-data-table__cell--non-numeric Laminate (Gold on Blue)
+            |         
+            td 10
+            |         
+            td $2.35

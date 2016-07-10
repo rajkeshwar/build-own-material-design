@@ -1,0 +1,81 @@
+doctype html
+html
+  head
+    title Material design card
+    | &#x9;
+    | &#x9;
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    | &#x9;
+    link(rel='stylesheet', href='card.css')
+    | &#x9;
+    style(type='text/css').
+      .mdl-shadow--2dp {
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+      }
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 CARDS
+      | &#x9;
+      .spacer
+      // Wide card with share menu button
+      style.
+        .demo-card-wide.mdl-card {
+        width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 176px;
+        background: url('img/welcome_card.jpg') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+        }
+      | &#x9;
+      .demo-card-wide.mdl-card.mdl-shadow--2dp
+        .mdl-card__title
+          h2.mdl-card__title-text Welcome
+        | &#x9;  
+        .mdl-card__supporting-text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          | Mauris sagittis pellentesque lacus eleifend lacinia...
+        | &#x9;  
+        .mdl-card__actions.mdl-card--border
+          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+            | Get Started
+        | &#x9;  
+        .mdl-card__menu
+          button.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
+            i.material-icons share
+      | &#x9;
+      .spacer
+      // Square card
+      style.
+        .demo-card-square.mdl-card {
+        width: 320px;
+        height: 320px;
+        }
+        .demo-card-square > .mdl-card__title {
+        color: #fff;
+        background:
+        url('img/dog.png') bottom right 15% no-repeat #46B6AC;
+        }
+      | &#x9;
+      .demo-card-square.mdl-card.mdl-shadow--2dp
+        .mdl-card__title.mdl-card--expand
+          h2.mdl-card__title-text Update
+        | &#x9;  
+        .mdl-card__supporting-text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          | Aenan convallis.
+        | &#x9;  
+        .mdl-card__actions.mdl-card--border
+          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+            | View Updates

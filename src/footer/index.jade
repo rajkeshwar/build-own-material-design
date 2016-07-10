@@ -1,0 +1,132 @@
+doctype html
+html
+  head
+    title Material design button
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    |   
+    script(src='/bower_components/material-design-lite/material.min.js')
+    // <script src="../componentHandler.js"></script>
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    // <script src="../ripple/ripple.js"></script>
+    // footer module
+    link(href='mega_footer.css', rel='stylesheet')
+    |   
+    script(src='mega_footer.js')
+    // footer module
+    link(href='mini_footer.css', rel='stylesheet')
+    |   
+    script(src='mini_footer.js')
+    |   
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 FOOTER PAGE
+      |   
+      |   
+      .spacer
+      |   
+      footer.mdl-mini-footer
+        .mdl-mini-footer__left-section
+          .mdl-logo Title
+          |       
+          ul.mdl-mini-footer__link-list
+            li
+              a(href='#') Help
+            |         
+            li
+              a(href='#') Privacy &amp; Terms
+      |   
+      .spacer
+      |   
+      |   
+      footer.mdl-mega-footer
+        .mdl-mega-footer__middle-section
+          .mdl-mega-footer__drop-down-section
+            input.mdl-mega-footer__heading-checkbox(type='checkbox', checked='')
+            |         
+            h1.mdl-mega-footer__heading Features
+            |         
+            ul.mdl-mega-footer__link-list
+              li
+                a(href='#') About
+              |           
+              li
+                a(href='#') Terms
+              |           
+              li
+                a(href='#') Partners
+              |           
+              li
+                a(href='#') Updates
+          |       
+          .mdl-mega-footer__drop-down-section
+            input.mdl-mega-footer__heading-checkbox(type='checkbox', checked='')
+            |         
+            h1.mdl-mega-footer__heading Details
+            |         
+            ul.mdl-mega-footer__link-list
+              li
+                a(href='#') Specs
+              |           
+              li
+                a(href='#') Tools
+              |           
+              li
+                a(href='#') Resources
+          |       
+          .mdl-mega-footer__drop-down-section
+            input.mdl-mega-footer__heading-checkbox(type='checkbox', checked='')
+            |         
+            h1.mdl-mega-footer__heading Technology
+            |         
+            ul.mdl-mega-footer__link-list
+              li
+                a(href='#') How it works
+              |           
+              li
+                a(href='#') Patterns
+              |           
+              li
+                a(href='#') Usage
+              |           
+              li
+                a(href='#') Products
+              |           
+              li
+                a(href='#') Contracts
+          |       
+          .mdl-mega-footer__drop-down-section
+            input.mdl-mega-footer__heading-checkbox(type='checkbox', checked='')
+            |         
+            h1.mdl-mega-footer__heading FAQ
+            |         
+            ul.mdl-mega-footer__link-list
+              li
+                a(href='#') Questions
+              |           
+              li
+                a(href='#') Answers
+              |           
+              li
+                a(href='#') Contact us
+        |     
+        .mdl-mega-footer__bottom-section
+          .mdl-logo Title
+          |       
+          ul.mdl-mega-footer__link-list
+            li
+              a(href='#') Help
+            |         
+            li
+              a(href='#') Privacy &amp; Terms

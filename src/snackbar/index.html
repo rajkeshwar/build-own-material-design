@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design button</title> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <script src="/bower_components/material-design-lite/material.min.js"></script> -->
+  <script src="../componentHandler.js"></script>
+
+  <!-- ripple module -->
+  <link href="../ripple/ripple.css" rel="stylesheet">
+  <script src="../ripple/ripple.js"></script>
+
+  <!-- button module -->
+  <link href="../button/button.css" rel="stylesheet">
+  <script src="../button/button.js"></script>
+
+  <!-- snackbar module -->
+  <link href="snackbar.css" rel="stylesheet" >
+  <script src="snackbar.js"></script>
+
+  <style type="text/css">
+  
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3>BLANK PAGE</h3>
+  
+  <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
+  <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+  </div>
+  <script>
+  (function() {
+    'use strict';
+    var snackbarContainer = document.querySelector('#demo-snackbar-example');
+    var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+    var handler = function(event) {
+      showSnackbarButton.style.backgroundColor = '';
+    };
+    showSnackbarButton.addEventListener('click', function() {
+      'use strict';
+      showSnackbarButton.style.backgroundColor = '#' +
+          Math.floor(Math.random() * 0xFFFFFF).toString(16);
+      var data = {
+        message: 'Button color changed.',
+        timeout: 2000,
+        actionHandler: handler,
+        actionText: 'Undo'
+      };
+      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+    });
+  }());
+  </script>
+
+  <div class="spacer"></div>
+    <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Toast</button>
+  <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+  </div>
+  <script>
+  (function() {
+    'use strict';
+    window['counter'] = 0;
+    var snackbarContainer = document.querySelector('#demo-toast-example');
+    var showToastButton = document.querySelector('#demo-show-toast');
+    showToastButton.addEventListener('click', function() {
+      'use strict';
+      var data = {message: 'Example Message # ' + ++counter};
+      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+    });
+  }());
+  </script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title Material design checkbox
+    |  
+    |   
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    |   
+    script(src='/bower_components/material-design-lite/material.min.js')
+    // <script src="../componentHandler.js"></script>
+    // ripple module
+    link(href='../ripple/ripple.css', rel='stylesheet')
+    // <script src="../ripple/ripple.js"></script>
+    // checkbox module
+    link(href='icon-toggle.css', rel='stylesheet')
+    |   
+    script(src='icon-toggle.js')
+    |   
+    style(type='text/css').
+      .container {
+      width: 80%;
+      margin: 0 auto;
+      }
+      .spacer {
+      margin: 30px 0;
+      border-bottom: 1px solid #ddd;
+      }
+  body
+    .container
+      h3 ICON TOGGLE
+      |   
+      .spacer
+      |   
+      label.mdl-icon-toggle.mdl-js-icon-toggle.mdl-js-ripple-effect(for='icon-toggle-2')
+        input#icon-toggle-2.mdl-icon-toggle__input(type='checkbox')
+        |     
+        i.mdl-icon-toggle__label.material-icons format_italic
+      |   
+      label.mdl-icon-toggle.mdl-js-icon-toggle.mdl-js-ripple-effect(for='icon-toggle-1')
+        input#icon-toggle-1.mdl-icon-toggle__input(type='checkbox', checked='')
+        |     
+        i.mdl-icon-toggle__label.material-icons format_bold

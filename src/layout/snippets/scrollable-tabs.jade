@@ -1,0 +1,49 @@
+html
+  body
+    // Simple header with scrollable tabs.
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      header.mdl-layout__header
+        .mdl-layout__header-row
+          // Title
+          span.mdl-layout-title Title
+        // Tabs
+        .mdl-layout__tab-bar.mdl-js-ripple-effect
+          a.mdl-layout__tab.is-active(href='#scroll-tab-1') Tab 1
+          |       
+          a.mdl-layout__tab(href='#scroll-tab-2') Tab 2
+          |       
+          a.mdl-layout__tab(href='#scroll-tab-3') Tab 3
+          |       
+          a.mdl-layout__tab(href='#scroll-tab-4') Tab 4
+          |       
+          a.mdl-layout__tab(href='#scroll-tab-5') Tab 5
+          |       
+          a.mdl-layout__tab(href='#scroll-tab-6') Tab 6
+      |   
+      .mdl-layout__drawer
+        span.mdl-layout-title Title
+      |   
+      main.mdl-layout__content
+        section#scroll-tab-1.mdl-layout__tab-panel.is-active
+          .page-content
+            // Your content goes here
+        |     
+        section#scroll-tab-2.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here
+        |     
+        section#scroll-tab-3.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here
+        |     
+        section#scroll-tab-4.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here
+        |     
+        section#scroll-tab-5.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here
+        |     
+        section#scroll-tab-6.mdl-layout__tab-panel
+          .page-content
+            // Your content goes here
